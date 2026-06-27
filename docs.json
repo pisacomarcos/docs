@@ -91,5 +91,11 @@
     "socials": {
       "website": "https://houra.app"
     }
+  },
+  "fonts": {
+    "family": "Geist"
+  },
+  "interaction": {
+    "drilldown": true
   }
 }

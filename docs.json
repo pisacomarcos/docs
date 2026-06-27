@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "luma",
+  "theme": "aspen",
   "name": "Houra",
   "colors": {
     "primary": "#2c2c2c",
@@ -21,67 +21,112 @@
     "links": []
   },
   "navigation": {
-    "tabs": [
+    "languages": [
       {
-        "tab": "Documentation",
-        "groups": [
+        "language": "en",
+        "default": true,
+        "tabs": [
           {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "pricing"
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "Get Started",
+                "pages": [
+                  "introduction",
+                  "quickstart",
+                  "pricing"
+                ]
+              },
+              {
+                "group": "Admin Panel",
+                "pages": [
+                  "admin/overview",
+                  "admin/schedules",
+                  "admin/attendance",
+                  "admin/employees",
+                  "admin/payroll",
+                  "admin/communication"
+                ]
+              },
+              {
+                "group": "Employee Portal",
+                "pages": [
+                  "employee/overview",
+                  "employee/clock-in",
+                  "employee/schedules",
+                  "employee/requests"
+                ]
+              },
+              {
+                "group": "Campus",
+                "pages": [
+                  "campus/overview",
+                  "campus/courses",
+                  "campus/wiki",
+                  "campus/certificates"
+                ]
+              },
+              {
+                "group": "Recruitment",
+                "pages": [
+                  "careers/overview",
+                  "careers/job-listings",
+                  "careers/applications",
+                  "careers/pipeline"
+                ]
+              }
             ]
           },
           {
-            "group": "Admin Panel",
-            "pages": [
-              "admin/overview",
-              "admin/schedules",
-              "admin/attendance",
-              "admin/employees",
-              "admin/payroll",
-              "admin/communication"
-            ]
-          },
-          {
-            "group": "Employee Portal",
-            "pages": [
-              "employee/overview",
-              "employee/clock-in",
-              "employee/schedules",
-              "employee/requests"
-            ]
-          },
-          {
-            "group": "Campus",
-            "pages": [
-              "campus/overview",
-              "campus/courses",
-              "campus/wiki",
-              "campus/certificates"
-            ]
-          },
-          {
-            "group": "Recruitment",
-            "pages": [
-              "careers/overview",
-              "careers/job-listings",
-              "careers/applications",
-              "careers/pipeline"
+            "tab": "Help & FAQ",
+            "groups": [
+              {
+                "group": "Support",
+                "pages": [
+                  "help/faq",
+                  "help/troubleshooting",
+                  "help/contact"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "Help & FAQ",
-        "groups": [
+        "language": "es",
+        "tabs": [
           {
-            "group": "Support",
-            "pages": [
-              "help/faq",
-              "help/troubleshooting",
-              "help/contact"
+            "tab": "Documentación",
+            "groups": [
+              {
+                "group": "Comenzar",
+                "pages": []
+              },
+              {
+                "group": "Panel de Administración",
+                "pages": []
+              },
+              {
+                "group": "Portal del Empleado",
+                "pages": []
+              },
+              {
+                "group": "Campus",
+                "pages": []
+              },
+              {
+                "group": "Reclutamiento",
+                "pages": []
+              }
+            ]
+          },
+          {
+            "tab": "Ayuda y FAQ",
+            "groups": [
+              {
+                "group": "Soporte",
+                "pages": []
+              }
             ]
           }
         ]
@@ -101,8 +146,5 @@
   },
   "icons": {
     "library": "fontawesome"
-  },
-  "background": {
-    "decoration": "grid"
   }
 }

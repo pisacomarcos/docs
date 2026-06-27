@@ -1,0 +1,96 @@
+---
+title: "Seguimiento de asistencia, fichaje QR y reportes"
+sidebarTitle: "Asistencia"
+description: "Monitorea los fichajes de tu equipo en vivo, genera reportes mensuales y habilita el fichaje por QR por cada sede de tu organización."
+---
+
+El módulo de Asistencia te ofrece una vista en vivo y actualizada continuamente de quién está presente, quién viene tarde y quién aún no ha llegado en cualquier día. Más allá del monitoreo en tiempo real, te permite generar reportes mensuales detallados por empleado, detectar patrones o irregularidades que puedan indicar problemas y exportar datos limpios para procesar nómina o auditorías externas. El fichaje por QR elimina el registro manual de tiempos y asegura que los eventos de fichaje estén vinculados a una sede física específica.
+
+## Panel de asistencia en vivo
+
+Cuando abres el módulo de Asistencia, lo primero que ves es el panel en vivo de hoy. Agrupa a los empleados en tres columnas:
+
+- **Presentes** — Empleados que han fichado entrada y están trabajando. Junto a su nombre se muestra la hora de ingreso.
+- **Con retraso** — Empleados que ficharon entrada después de su hora programada. El retraso se muestra para evaluar su severidad al instante.
+- **Ausentes** — Empleados programados para hoy que aún no han fichado. A medida que avanza el día y van fichando, pasan automáticamente de Ausentes a Presentes.
+
+El panel se refresca en tiempo real, así que no necesitas recargar para ver el estado más reciente.
+
+<Tip>
+  Mantén el módulo de Asistencia abierto en una pestaña durante el día. Detectarás tardanzas y ausencias en el momento en que ocurren, en lugar de descubrirlas después.
+</Tip>
+
+## Cómo funciona el fichaje por QR
+
+El fichaje por QR vincula los eventos de asistencia a una sede física. En lugar de que los empleados ingresen tiempos manualmente o usen un PIN compartido, cada sede tiene su propio código QR único. Los empleados lo escanean con la app del Portal del Empleado cuando llegan y al irse.
+
+### Configurar códigos QR por sede
+
+<Steps>
+  <Step title="Ve a Sedes en el módulo de Empleados">
+    Navega a **Empleados → Sedes**. Verás una lista de todas las oficinas y sitios que tienes configurados.
+  </Step>
+  <Step title="Abre una sede y encuentra el código QR">
+    Haz clic en una sede para abrir su panel de detalle. Desplaza hasta la sección **Fichaje por QR**.
+  </Step>
+  <Step title="Descarga o imprime el código QR">
+    Haz clic en **Descargar QR** para guardar la imagen, o en **Imprimir** para enviarlo a una impresora. Coloca el QR impreso en la entrada de esa sede.
+  </Step>
+  <Step title="Repite por cada sede">
+    Cada sede tiene su propio código único. Repite este proceso por cada oficina o sitio donde quieras habilitar el fichaje por QR.
+  </Step>
+</Steps>
+
+Cuando un empleado escanea el QR con su app del Portal, Houra registra el fichaje, marca la fecha y hora y lo vincula a esa sede específica. El panel en vivo se actualiza en segundos.
+
+<Note>
+  Los empleados deben tener instalada la app del Portal del Empleado de Houra y haber iniciado sesión para que el fichaje por QR funcione. El QR por sí solo no ficha a nadie — la app valida la identidad del empleado.
+</Note>
+
+<Warning>
+  El código QR de cada sede es único y no debe compartirse entre sitios. Usar el mismo código en varias sedes hace imposible saber con precisión desde dónde fichó el empleado.
+</Warning>
+
+## Generar reportes mensuales
+
+Al final de cada mes — o en cualquier momento durante el mes — puedes generar un reporte de asistencia detallado para cualquier empleado.
+
+<Steps>
+  <Step title="Abre la pestaña Reportes">
+    En el módulo de Asistencia, haz clic en la pestaña **Reportes** en la parte superior.
+  </Step>
+  <Step title="Selecciona el empleado y el período">
+    Usa el buscador de empleados para encontrar a la persona. Luego elige el mes y año desde el selector de fechas.
+  </Step>
+  <Step title="Revisa el reporte">
+    El reporte muestra cada día laboral, la hora programada de entrada y salida, la hora real de fichaje y si el empleado estuvo puntual, tarde o ausente.
+  </Step>
+  <Step title="Exporta si lo necesitas">
+    Haz clic en **Exportar** para descargar el reporte como CSV o PDF. Ve la sección siguiente para más detalles.
+  </Step>
+</Steps>
+
+## Detección de irregularidades
+
+Houra marca los eventos de asistencia que se salen de los parámetros esperados para que investigues sin tener que escanear manualmente cada fila.
+
+Las irregularidades que Houra detecta incluyen:
+
+- **Tardanzas reiteradas** — Un empleado que llega tarde más de un número configurable de veces en un período móvil.
+- **Fichajes de salida faltantes** — Un empleado que fichó entrada pero nunca fichó salida, lo que podría indicar olvido o problema técnico.
+- **Turnos inusualmente cortos** — Un fichaje de entrada y salida mucho más próximos que la duración programada.
+- **Discrepancias de sede** — Un empleado programado en una sede pero que fichó desde otra.
+
+Los eventos marcados aparecen en ámbar tanto en el panel en vivo como en la vista mensual. Haz clic en cualquier evento para ver detalles y agregar una nota interna si lo investigas y resuelves.
+
+## Exportar datos de asistencia
+
+Puedes exportar datos de asistencia en cualquier momento para procesar nómina, cumplimiento o herramientas externas de RRHH.
+
+- **CSV por empleado** — Exporta el registro de asistencia de un solo empleado para cualquier rango de fechas.
+- **CSV de todo el equipo** — Exporta los registros de asistencia de todo tu equipo para el mes seleccionado, con una fila por evento de fichaje.
+- **Reporte PDF** — Genera un reporte con formato listo para imprimir, adecuado para registros oficiales o revisiones del empleado.
+
+<Note>
+  Los datos de asistencia exportados se formatean automáticamente para alinearse con las expectativas de importación del módulo de nómina, facilitando reconciliar horas trabajadas con cálculos salariales.
+</Note>

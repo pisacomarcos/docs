@@ -1,0 +1,98 @@
+---
+title: "Gestión de perfiles de empleados y estructura de la organización"
+sidebarTitle: "Empleados"
+description: "Mantén registros completos de empleados, visualiza tu organigrama y gestiona puestos y sedes — todo desde el Panel de Administración de Houra."
+---
+
+El módulo de Empleados es la fuente de verdad para todo lo relacionado con tu gente. Aquí mantienes un perfil completo de cada miembro del equipo — desde sus datos de contacto y rol asignado hasta su banda salarial y nivel de acceso — y puedes visualizar cómo se conecta tu organización en un organigrama interactivo. Como los datos de los empleados se comparten en toda Houra, los registros que mantengas aquí fluyen automáticamente a horarios, asistencia y nómina, así solo ingresas la información una vez.
+
+## Tarjetas de perfil de empleado
+
+Cada empleado en Houra tiene una tarjeta de perfil que consolida toda la información que necesitas. Para ver o editar un perfil, ve a **Empleados** en la barra lateral y haz clic en el nombre o foto del empleado.
+
+Un perfil completo contiene:
+
+- **Nombre y datos de contacto** — Nombre completo, correo y teléfono.
+- **Rol y puesto** — El título actual y el puesto al que mapea en tu estructura.
+- **Salario** — La compensación base. Este valor se usa por el módulo de Nómina durante las liquidaciones.
+- **Nivel de acceso** — Si el empleado tiene acceso estándar, de líder de equipo o de administrador (ver [Niveles de Acceso](#niveles-de-acceso) abajo).
+- **Sede** — La oficina o sitio principal donde trabaja. Se usa como predeterminado al planificar y para fichaje por QR.
+- **Fecha de inicio y tipo de contrato** — Fecha de contratación y si es tiempo completo, parcial o contratista.
+
+<Tip>
+  Mantén las tarjetas de perfil completas y al día. Salarios desactualizados afectan la precisión de la nómina y una sede incorrecta hace que el tablero de horarios se defaulte al sitio equivocado.
+</Tip>
+
+### Crear un nuevo empleado
+
+<Steps>
+  <Step title="Haz clic en 'Agregar empleado'">
+    Desde la lista de Empleados, haz clic en el botón **\+ Agregar empleado** en la esquina superior derecha.
+  </Step>
+  <Step title="Completa los datos del perfil">
+    Llena los campos requeridos: nombre, correo, puesto, sede, nivel de acceso y fecha de inicio. Agrega salario y cualquier dato adicional.
+  </Step>
+  <Step title="Envía la invitación">
+    Haz clic en **Guardar e invitar**. Houra envía al nuevo empleado un correo con un enlace para activar su cuenta del Portal del Empleado.
+  </Step>
+</Steps>
+
+## Organigrama interactivo
+
+El organigrama te da un mapa visual en vivo de la estructura de reporte de tu organización. Ábrelo haciendo clic en **Organigrama** en la navegación superior del módulo de Empleados.
+
+Cada nodo del organigrama representa un empleado y muestra su nombre, foto y puesto actual. Las líneas entre nodos reflejan relaciones de reporte. Puedes:
+
+- **Zoom y desplazamiento** — Usa la rueda del mouse o pellizco para acercarte a un equipo, y clic\+arrastrar para desplazarte.
+- **Hacer clic en un nodo** — Hacer clic abre una versión compacta del perfil sin salir del organigrama.
+- **Reasignar líneas de reporte** — Arrastra un nodo a otro nodo padre para actualizar la relación. El cambio se guarda al instante.
+
+<Note>
+  El organigrama se construye automáticamente a partir de las relaciones de reporte que defines en cada perfil. Si el organigrama luce incompleto, verifica que cada empleado tenga un valor 'Reporta a' asignado en su perfil.
+</Note>
+
+## Crear y editar puestos
+
+Los puestos son los roles laborales estandarizados de tu organización (por ejemplo, "Asesor de Ventas", "Supervisor de Turno" o "Gerente Regional"). Están por encima de los empleados individuales y facilitan gestionar la dotación y la estructura de reporte de forma consistente.
+
+Para gestionar puestos, ve a **Empleados → Puestos**.
+
+- **Crear un puesto** — Haz clic en **\+ Nuevo puesto**, ingresa el título y opcionalmente asócialo a un departamento o a un puesto padre en la jerarquía.
+- **Editar un puesto** — Haz clic en el nombre del puesto para abrir su panel. Actualiza título, departamento o jerarquía según sea necesario.
+- **Archivar un puesto** — Si un rol deja de existir, archívalo en vez de eliminarlo para preservar el histórico de quienes lo ocuparon.
+
+## Gestionar sedes
+
+Las sedes representan los sitios físicos donde trabajan tus empleados. Conectan directamente con códigos QR de fichaje, filtros de planificación y reportes por sede.
+
+Para gestionar sedes, ve a **Empleados → Sedes**.
+
+- **Agregar una sede** — Haz clic en **\+ Nueva sede** e ingresa nombre y dirección.
+- **Editar una sede** — Haz clic en el nombre para actualizar sus datos o descargar su código QR.
+- **Asignar empleados a una sede** — Define la sede principal en el perfil de cada empleado, o usa la página de la sede para ver y gestionar todos los empleados asignados.
+
+## Niveles de acceso
+
+Los niveles de acceso controlan qué puede ver y hacer cada persona dentro de Houra. Hay tres niveles:
+
+| Nivel | A qué acceden |
+| --- | --- |
+| **Empleado** | Solo el Portal del Empleado — su propio horario, fichaje, solicitudes y recibos. |
+| **Líder de Equipo** | Portal del Empleado más acceso limitado al Panel — puede ver (no editar) horarios y asistencia de sus reportes directos. |
+| **Administrador** | Acceso completo a todos los módulos del Panel, incluyendo nómina, datos de empleados y configuración. |
+
+<Warning>
+  El acceso de Administrador otorga visibilidad total de datos salariales y la capacidad de procesar nómina. Asigna este nivel solo a quienes realmente lo necesiten y revisa la lista periódicamente.
+</Warning>
+
+## Cómo se conectan los datos de empleados con otros módulos
+
+El módulo de Empleados es la base sobre la que se construyen los demás. Así fluyen los datos:
+
+- **Horarios** — El puesto y la sede del empleado determinan dónde aparece en el tablero y a qué sede se defaultea el turno.
+- **Asistencia** — El fichaje por QR valida contra la cuenta del empleado, y los reportes toman el nombre, puesto y sede directamente del perfil.
+- **Nómina** — Las liquidaciones usan la compensación base almacenada en el perfil. Los saldos de permisos y el tipo de contrato también alimentan los cálculos.
+
+<Info>
+  Cuando actualizas el salario o puesto en el módulo de Empleados, el cambio aplica de inmediato a cualquier futura corrida de nómina. Las liquidaciones en curso no se modifican retroactivamente.
+</Info>

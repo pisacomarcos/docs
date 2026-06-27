@@ -1,0 +1,111 @@
+---
+title: "Procesamiento de nómina, adelantos y gestión de permisos"
+sidebarTitle: "Nómina"
+description: "Ejecuta liquidaciones salariales, aprueba adelantos, gestiona permisos y mantén un audit trail completo — todo desde el módulo de nómina de Houra."
+---
+
+El módulo de Nómina reúne el procesamiento de salarios, las solicitudes de adelanto y la gestión de permisos en un solo lugar, para que manejes tus responsabilidades de RRHH más sensibles sin saltar entre herramientas u hojas de cálculo. Cada acción queda registrada en un audit trail completo, dándote trazabilidad total si alguna vez necesitas revisar cómo se calculó un recibo o quién aprobó una solicitud. Como Nómina se conecta directamente con Asistencia, las horas que trabaja tu equipo alimentan tus cálculos automáticamente.
+
+## Flujo de liquidación salarial
+
+Una liquidación salarial es el proceso de calcular y aprobar el pago de un empleado para un período determinado. Houra te guía paso a paso en un flujo estructurado para reducir errores y asegurar que nada se omita.
+
+<Steps>
+  <Step title="Abre Nómina y comienza una nueva liquidación">
+    En la barra lateral del Panel de Administración, haz clic en **Nómina**. Luego haz clic en **\+ Nueva liquidación**. Selecciona el empleado y el período (mes y año) que quieres procesar.
+  </Step>
+  <Step title="Revisa asistencia y horas">
+    Houra trae automáticamente los datos de asistencia del período — días trabajados, horas totales, llegadas tarde y ausencias. Revisa estos datos y corrige cualquier discrepancia antes de continuar. Si un registro requiere ajuste, haz clic en el enlace para abrirlo directamente en el módulo de Asistencia.
+  </Step>
+  <Step title="Aplica deducciones y adiciones">
+    Agrega cualquier concepto puntual que aplique a este período: bonos, comisiones, horas extra o deducciones como sanciones o adelantos previamente aprobados que se estén recuperando. Cada línea requiere una nota explicando la razón.
+  </Step>
+  <Step title="Revisa el resumen">
+    El resumen de la liquidación muestra el salario bruto, todas las adiciones y deducciones detalladas y el pago neto final. Confirma que cada cifra es correcta antes de continuar.
+  </Step>
+  <Step title="Aprueba y emite el recibo">
+    Haz clic en **Aprobar liquidación**. Houra marca la liquidación como finalizada, registra el nombre del administrador y la fecha y hora en el audit trail, y pone el recibo a disposición del empleado en su Portal.
+  </Step>
+</Steps>
+
+<Warning>
+  Las liquidaciones aprobadas no se pueden editar. Si descubres un error después de aprobar, debes crear una liquidación correctiva para el mismo período. Ambas — la original y la corrección — se preservan en el audit trail.
+</Warning>
+
+## Aprobar adelantos salariales
+
+Los empleados pueden enviar solicitudes de adelanto desde el Portal. Cuando llega una solicitud, recibes una notificación en el Panel y aparece en la pestaña **Adelantos** del módulo de Nómina.
+
+Para cada solicitud puedes:
+
+- **Revisar el monto y motivo** — El motivo declarado por el empleado se muestra junto a su saldo actual de adelantos pendientes.
+- **Aprobar** — Haz clic en **Aprobar** para autorizar el adelanto. Houra registra la aprobación con tu nombre, fecha y monto.
+- **Rechazar** — Haz clic en **Rechazar** y opcionalmente agrega una nota. El empleado recibe la notificación y puede ver tu nota en su portal.
+
+<Note>
+  Los adelantos aprobados quedan registrados como recuperaciones pendientes contra la cuenta del empleado. Cuando proceses su próxima liquidación, Houra muestra el adelanto pendiente y ofrece deducirlo del neto automáticamente.
+</Note>
+
+<Tip>
+  Revisa los adelantos pendientes antes de finalizar una liquidación. El resumen destaca los adelantos abiertos para que no cierres un período sin recuperarlos.
+</Tip>
+
+## Gestionar tipos de permiso
+
+La sección de Permisos del módulo de Nómina te permite definir y gestionar los tipos de permiso disponibles para tus empleados, así como revisar y actuar sobre solicitudes individuales.
+
+### Configurar tipos de permiso
+
+Ve a **Nómina → Permisos → Tipos de Permiso** para ver todas las categorías de permiso que usa tu organización. Ejemplos comunes:
+
+- **Vacaciones** — Días pagados acumulados durante el año.
+- **Licencia por enfermedad** — Permiso pagado o parcialmente pagado por enfermedad.
+- **Permiso sin goce** — Días sin compensación.
+- **Permiso parental** — Maternidad o paternidad, con reglas distintas.
+
+Para cada tipo puedes configurar el nombre, si es pagado o no, el cupo anual (en días) y si los días no usados se acumulan al siguiente año.
+
+### Revisar solicitudes de permiso
+
+Los empleados envían solicitudes de permiso desde el Portal. Las solicitudes pendientes aparecen en **Nómina → Permisos → Solicitudes**.
+
+<Steps>
+  <Step title="Abre la solicitud">
+    Haz clic en la solicitud para ver el nombre del empleado, el tipo de permiso, las fechas y cualquier nota adjunta.
+  </Step>
+  <Step title="Verifica saldo restante">
+    Houra muestra el saldo actual del empleado para el tipo de permiso solicitado junto a la solicitud, para que apruebes con confianza.
+  </Step>
+  <Step title="Aprueba o rechaza">
+    Haz clic en **Aprobar** o **Rechazar**. Si rechazas, agrega una nota breve para que el empleado entienda por qué. Cualquiera de las acciones notifica al empleado al instante.
+  </Step>
+</Steps>
+
+Los permisos aprobados se reflejan automáticamente en el registro de asistencia del empleado y se descuentan de su saldo. Cuando el período de permiso cae dentro de un período de pago activo, Houra lo considera en el cálculo de la liquidación.
+
+## Audit trail y trazabilidad
+
+Cada acción en el módulo de Nómina — crear una liquidación, aprobar un adelanto, actualizar un saldo de permiso, modificar una deducción — se registra en el audit trail con los siguientes detalles:
+
+- La acción realizada
+- El empleado al que se refiere
+- El administrador que ejecutó la acción
+- Fecha y hora exactas
+
+Para ver el audit trail, ve a **Nómina → Audit Trail**. Puedes filtrar por empleado, tipo de acción o rango de fechas para encontrar rápidamente un evento específico.
+
+<Info>
+  El audit trail es de solo lectura y no se puede editar ni eliminar. Esto asegura un registro a prueba de manipulaciones para cumplimiento o auditorías internas.
+</Info>
+
+## Cómo se conecta Nómina con Asistencia
+
+El módulo de Nómina toma datos de asistencia automáticamente, pero vale la pena entender qué significa esa conexión:
+
+- **Horas trabajadas** — Los fichajes del módulo de Asistencia alimentan directamente el cálculo de horas, eliminando el ingreso manual.
+- **Ausencias y tardanzas** — Ausencias injustificadas o tardanzas excesivas pueden disparar reglas de deducción automática que configures.
+- **Permisos aprobados** — Los permisos aprobados desde Nómina se escriben de vuelta en el registro de Asistencia para mantener ambos módulos sincronizados.
+
+<Tip>
+  Antes de iniciar la liquidación de un período, confirma que todos los registros de asistencia estén completos y finalizados. Huecos o salidas faltantes afectarán la precisión de los cálculos por horas.
+</Tip>

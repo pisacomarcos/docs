@@ -1,0 +1,98 @@
+---
+title: "Managing Employee Profiles and Organization Chart"
+sidebarTitle: "Employees"
+description: "Maintain complete employee records, visualize your org chart, and manage positions and locations — all from the Houra Admin Panel."
+---
+
+The Employees module is the source of truth for everything related to your people. Here you maintain a full profile for every team member — from their contact details and assigned role to their salary band and access level — and you can visualize how your entire organization fits together in an interactive org chart. Because employee data is shared across Houra, the records you maintain here flow automatically into scheduling, attendance tracking, and payroll, so you only ever enter information once.
+
+## Employee Profile Cards
+
+Each employee in Houra has a profile card that consolidates all the information you need in one place. To view or edit a profile, navigate to **Employees** in the sidebar and click any employee's name or photo.
+
+A complete profile card contains:
+
+- **Name and contact details** — Full name, email address, and phone number.
+- **Role and position** — The employee's current job title and the position it maps to in your org structure.
+- **Salary** — The employee's base compensation. This value is used by the Payroll module during liquidations.
+- **Access level** — Whether the employee has standard employee access, team-lead access, or administrator access (see [Access Levels](#access-levels) below).
+- **Location** — The primary office or site where the employee works. Used as the default in schedule planning and QR clock-in.
+- **Start date and employment type** — Hire date and whether the employee is full-time, part-time, or a contractor.
+
+<Tip>
+  Keep profile cards complete and current. Outdated salary figures affect payroll accuracy, and an incorrect location means the scheduling board defaults to the wrong site.
+</Tip>
+
+### Creating a New Employee
+
+<Steps>
+  <Step title="Click 'Add employee'">
+    From the Employees list, click the **+ Add employee** button in the top-right corner.
+  </Step>
+  <Step title="Fill in the profile details">
+    Complete the required fields: name, email, position, location, access level, and start date. Add salary and any additional details.
+  </Step>
+  <Step title="Send the invitation">
+    Click **Save and invite**. Houra sends the new employee an email with a link to activate their Employee Portal account.
+  </Step>
+</Steps>
+
+## Interactive Org Chart
+
+The org chart gives you a live visual map of your organization's reporting structure. Open it by clicking **Org Chart** in the Employees module's top navigation.
+
+Each node in the chart represents an employee and shows their name, photo, and current position. Lines between nodes reflect reporting relationships. You can:
+
+- **Zoom and pan** — Use the scroll wheel or pinch gesture to zoom in on a particular team, and click-and-drag to pan around the chart.
+- **Click a node** — Clicking any employee's node opens a compact version of their profile without leaving the org chart.
+- **Reassign reporting lines** — Drag a node to a different parent node to update the reporting relationship. The change saves immediately.
+
+<Note>
+  The org chart is built automatically from the reporting relationships you set in each employee's profile. If the chart looks incomplete, check that every employee has a 'Reports to' value assigned in their profile.
+</Note>
+
+## Creating and Editing Positions
+
+Positions are the standardized job roles in your organization (for example, "Sales Associate," "Shift Supervisor," or "Regional Manager"). They sit above individual employees in the data model and make it easier to manage headcount and reporting structure consistently.
+
+To manage positions, go to **Employees → Positions**.
+
+- **Create a position** — Click **+ New position**, enter the title, and optionally associate it with a department or a parent position in the hierarchy.
+- **Edit a position** — Click the position name to open its detail panel. Update the title, department, or hierarchy as needed.
+- **Archive a position** — If a role no longer exists in your organization, archive it rather than delete it to preserve historical data for employees who held it.
+
+## Managing Locations
+
+Locations represent the physical sites where your employees work. They connect directly to QR clock-in codes, schedule planning filters, and location-specific reports.
+
+To manage locations, go to **Employees → Locations**.
+
+- **Add a location** — Click **+ New location** and enter the site name and address.
+- **Edit a location** — Click any location's name to update its details or download its QR clock-in code.
+- **Assign employees to a location** — Set the primary location on each employee's profile card, or use the location's detail page to see and manage all employees assigned to that site.
+
+## Access Levels
+
+Access levels control what each person can see and do inside Houra. There are three levels:
+
+| Level | What they can access |
+|---|---|
+| **Employee** | Employee Portal only — their own schedule, clock-in, requests, and payslips. |
+| **Team Lead** | Employee Portal plus limited Admin Panel access — can view (but not edit) team schedules and attendance for their direct reports. |
+| **Administrator** | Full access to all Admin Panel modules, including payroll, employee data, and system settings. |
+
+<Warning>
+  Administrator access grants full visibility into salary data and the ability to process payroll. Assign this level only to users who genuinely need it, and review the list of administrators periodically.
+</Warning>
+
+## How Employee Data Connects to Other Modules
+
+The Employees module is the foundation that other modules build on. Here's how the data flows:
+
+- **Schedules** — An employee's position and location determine where they appear in the scheduling board and which location the shift defaults to.
+- **Attendance** — QR clock-in validates against the employee's account, and attendance reports pull the employee's name, position, and location directly from their profile.
+- **Payroll** — Salary liquidations use the base compensation stored in the employee's profile. Leave balances and employment type also feed into payroll calculations.
+
+<Info>
+  When you update an employee's salary or position in the Employees module, the change takes effect immediately for any future payroll runs. In-progress liquidations are not retroactively altered.
+</Info>

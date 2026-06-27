@@ -1,0 +1,111 @@
+---
+title: "Processing Payroll, Advances, and Leave in Houra"
+sidebarTitle: "Payroll"
+description: "Run salary liquidations, approve advance requests, manage leave, and maintain a full audit trail — all from the Houra payroll module."
+---
+
+The Payroll module brings together salary processing, advance requests, and leave management in one place, so you can handle your most sensitive HR responsibilities without juggling separate tools or spreadsheets. Every action in the module is logged in a full audit trail, giving you complete traceability if you ever need to review how a particular payslip was calculated or who approved a specific request. Because Payroll connects directly to Attendance, the hours your team works feed into your calculations automatically.
+
+## Salary Liquidation Workflow
+
+A salary liquidation is the process of calculating and approving an employee's pay for a given period. Houra walks you through each step in a structured workflow to reduce errors and ensure nothing is missed.
+
+<Steps>
+  <Step title="Open the Payroll module and start a new liquidation">
+    In the Admin Panel sidebar, click **Payroll**. Then click **+ New liquidation**. Select the employee and the pay period (month and year) you want to process.
+  </Step>
+  <Step title="Review attendance and hours">
+    Houra automatically pulls in the employee's attendance data for the selected period — days worked, total hours, late arrivals, and absences. Review this data and correct any discrepancies before proceeding. If an attendance record needs adjustment, click the link to open it directly in the Attendance module.
+  </Step>
+  <Step title="Apply deductions and additions">
+    Add any one-off items that apply to this pay period: bonuses, commissions, overtime pay, or deductions such as penalties or previously approved advances being recovered. Each line item requires a note explaining the reason.
+  </Step>
+  <Step title="Review the summary">
+    The liquidation summary shows the gross salary, all additions and deductions itemized, and the final net pay. Confirm that every figure is correct before proceeding.
+  </Step>
+  <Step title="Approve and issue the payslip">
+    Click **Approve liquidation**. Houra marks the liquidation as finalized, records the approving administrator's name and timestamp in the audit trail, and makes the payslip available to the employee in their Employee Portal.
+  </Step>
+</Steps>
+
+<Warning>
+  Approved liquidations cannot be edited. If you discover an error after approving, you must create a corrective liquidation for the same period. Both the original and the correction are preserved in the audit trail.
+</Warning>
+
+## Approving Salary Advances
+
+Employees can submit advance requests through the Employee Portal. When a request arrives, you receive a notification in the Admin Panel and it appears in the **Advances** tab of the Payroll module.
+
+For each advance request you can:
+
+- **Review the amount and reason** — The employee's stated reason is displayed alongside their current balance of any outstanding advances.
+- **Approve** — Click **Approve** to authorize the advance. Houra logs the approval with your name, the date, and the amount.
+- **Reject** — Click **Reject** and optionally add a note. The employee is notified and can see your note in their portal.
+
+<Note>
+  Approved advances are tracked as pending recoveries against the employee's account. When you process their next salary liquidation, Houra surfaces the outstanding advance and offers to deduct it from the net pay automatically.
+</Note>
+
+<Tip>
+  Review any outstanding advances before finalizing a liquidation. The liquidation summary highlights open advances so you don't accidentally close a pay period without recovering them.
+</Tip>
+
+## Managing Leave Types
+
+The Leave section of the Payroll module lets you define and manage the leave types available to your employees, as well as review and action individual leave requests.
+
+### Configuring Leave Types
+
+Go to **Payroll → Leave → Leave Types** to see all the leave categories your organization uses. Common examples include:
+
+- **Vacation leave** — Paid time off accrued over the year.
+- **Sick leave** — Paid or partially paid leave for illness.
+- **Unpaid leave** — Time off without compensation.
+- **Parental leave** — Maternity or paternity leave, often with distinct rules.
+
+For each leave type you can configure the name, whether it is paid or unpaid, the annual entitlement (in days), and whether unused days carry over to the following year.
+
+### Reviewing Leave Requests
+
+Employees submit leave requests through the Employee Portal. Pending requests appear in **Payroll → Leave → Requests**.
+
+<Steps>
+  <Step title="Open the leave request">
+    Click on the request to see the employee's name, the leave type, the dates requested, and any note they attached.
+  </Step>
+  <Step title="Check remaining balance">
+    Houra displays the employee's current balance for the requested leave type alongside the request, so you can approve with confidence.
+  </Step>
+  <Step title="Approve or reject">
+    Click **Approve** or **Reject**. If you reject the request, add a brief note so the employee understands why. Either action notifies the employee immediately.
+  </Step>
+</Steps>
+
+Approved leave is automatically reflected in the employee's attendance record and deducted from their leave balance. When the leave period falls within an active pay period, Houra accounts for it in the salary liquidation calculation.
+
+## Audit Trail and Traceability
+
+Every action taken in the Payroll module — creating a liquidation, approving an advance, updating a leave balance, modifying a deduction — is recorded in the audit trail with the following details:
+
+- The action performed
+- The employee it relates to
+- The administrator who performed the action
+- The exact date and time
+
+To view the audit trail, go to **Payroll → Audit Trail**. You can filter by employee, action type, or date range to find a specific event quickly.
+
+<Info>
+  The audit trail is read-only and cannot be edited or deleted. This ensures a tamper-proof record for compliance purposes or internal reviews.
+</Info>
+
+## How Payroll Connects to Attendance
+
+The Payroll module draws on attendance data automatically, but it's worth understanding what that connection means in practice:
+
+- **Hours worked** — Clock-in and clock-out records from the Attendance module feed directly into the liquidation's hours calculation, removing the need for manual time entry.
+- **Absences and lateness** — Unexcused absences or excessive lateness can trigger automatic deduction rules you configure in Payroll settings.
+- **Approved leave** — Leave approved through the Payroll module is written back to the Attendance record so both modules stay in sync.
+
+<Tip>
+  Before starting any pay-period liquidation, confirm that all attendance records for that period are complete and finalized. Gaps or missing clock-outs will affect the accuracy of hours-based calculations.
+</Tip>

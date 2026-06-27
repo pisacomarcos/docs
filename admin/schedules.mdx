@@ -1,0 +1,84 @@
+---
+title: "Managing Employee Schedules with Houra"
+sidebarTitle: "Schedules"
+description: "Create, publish, and manage weekly employee schedules in Houra. Use AI-assisted scheduling to optimize shift assignments by location."
+---
+
+The Schedules module gives you a clear, visual way to plan your team's work week. You can assign shifts per employee and per location, handle incoming shift-change requests, and publish the final schedule so every team member is notified the moment it goes live. When planning gets complex — multiple locations, rotating shifts, partial availability — Houra's AI assistant can step in and propose an optimized arrangement in seconds.
+
+## Weekly Schedule View
+
+The schedule board displays your team in a weekly grid. Rows represent individual employees and columns represent days of the week. If your organization operates across more than one location, you can filter the board by site so you only see the employees and shifts relevant to that location.
+
+- **Employee view** — Scroll through every employee's week on a single screen and spot gaps or overlaps at a glance.
+- **Location view** — Switch to a location-centric view to see all shifts assigned to a particular office or site.
+- **Navigation** — Use the forward and back arrows to move between weeks, or click the date picker to jump to any specific week.
+
+## Creating a New Schedule
+
+<Steps>
+  <Step title="Open the Schedules module">
+    From the Admin Panel sidebar, click **Schedules**. The current week's board loads automatically.
+  </Step>
+  <Step title="Select the target week">
+    Click the date navigator at the top of the board to choose the week you want to schedule. You can plan multiple weeks ahead at any time.
+  </Step>
+  <Step title="Add a shift for an employee">
+    Click the empty cell that corresponds to the employee's row and the day you want to schedule. A shift creation panel slides in from the right.
+  </Step>
+  <Step title="Set shift details">
+    Enter the start time, end time, location, and any notes relevant to that shift. You can also assign a shift type (e.g., morning, afternoon, on-call) if your organization uses them.
+  </Step>
+  <Step title="Save and repeat">
+    Click **Save shift**. Repeat for each employee and day until the week is fully covered, or use the AI assistant to fill remaining gaps automatically.
+  </Step>
+  <Step title="Review before publishing">
+    Before publishing, scan the board for coverage gaps, overtime conflicts, or employees missing required rest periods. The board highlights potential issues in amber.
+  </Step>
+</Steps>
+
+## AI-Assisted Scheduling
+
+When you have a partially built schedule and want help filling in the rest, you can request an AI suggestion at any point.
+
+Click **Suggest with AI** in the schedule toolbar. Houra analyzes your employee roster, their assigned locations, historical shift patterns, and any constraints you have configured (maximum hours, mandatory rest periods, location preferences) and then proposes a complete schedule for the week.
+
+You review the suggestion before anything is saved. Accept individual shifts you agree with, modify the ones you want to adjust, and discard any that don't fit. Nothing is written to the schedule until you confirm.
+
+<Tip>
+  The more data Houra has about your team — locations, positions, availability windows — the more accurate AI suggestions become. Keep employee profiles up to date for best results.
+</Tip>
+
+## Publishing Schedules
+
+Once you are satisfied with a week's schedule, click **Publish**. Houra immediately sends a notification to every employee whose shifts are included, letting them know their week has been planned. Employees can view their schedule in the Employee Portal app as soon as it is published.
+
+<Note>
+  Published schedules can still be edited. If you update a shift after publishing, the affected employee receives an automatic update notification.
+</Note>
+
+## Managing Shift-Change Requests
+
+Employees can submit shift-change requests through the Employee Portal. When a request arrives, you receive a notification in the Admin Panel and the request appears in your **Pending requests** queue within the Schedules module.
+
+For each request you can:
+
+- **Approve** — The schedule updates automatically and both employees (if a swap is involved) are notified.
+- **Reject** — Add an optional note explaining the decision, which the employee can see in their portal.
+- **Modify and approve** — Adjust the proposed change before approving if the exact request isn't feasible but a similar arrangement works.
+
+<Warning>
+  Approving a shift swap may create an overtime conflict if either employee is already near their weekly hour limit. Houra flags this before you confirm.
+</Warning>
+
+## Working with Multiple Locations
+
+If your company has more than one office, warehouse, or site, you can assign each shift to a specific location. This allows you to:
+
+- Filter the schedule board to a single location and focus your planning there.
+- Ensure employees aren't accidentally assigned to a location they are not associated with.
+- Generate location-specific reports to compare staffing levels across sites.
+
+<Tip>
+  Set each employee's primary location in their profile under the Employees module. Houra will default new shift assignments to that location, saving you clicks during planning.
+</Tip>

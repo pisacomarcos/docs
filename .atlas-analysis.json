@@ -1,24 +1,11 @@
 {
-  "$schema": "https://mintlify.com/docs.json",
+  "projectType": "saas",
+  "projectName": "Houra",
+  "projectDescription": "Houra is an all-in-one HR platform that lets companies manage employee scheduling, attendance, payroll, training, and recruitment from a single place.",
   "theme": "almond",
-  "name": "Houra",
-  "colors": {
-    "primary": "#2c2c2c",
-    "light": "#1427ea",
-    "dark": "#849cf4"
-  },
-  "favicon": "https://media.brand.dev/7bf980d2-fd47-47bb-9352-9b905afd31ca.png",
-  "logo": {
-    "light": "https://media.brand.dev/77d9ad1c-4aea-4308-b7f3-eb08199452ef.svg",
-    "dark": "https://media.brand.dev/77d9ad1c-4aea-4308-b7f3-eb08199452ef.svg"
-  },
-  "navbar": {
-    "primary": {
-      "type": "button",
-      "label": "Comenzar gratis",
-      "href": "https://houra.app/sign-up"
-    }
-  },
+  "primaryColor": "#2c2c2c",
+  "lightColor": "#1427ea",
+  "darkColor": "#849cf4",
   "navigation": {
     "tabs": [
       {
@@ -87,9 +74,24 @@
       }
     ]
   },
-  "footer": {
-    "socials": {
-      "website": "https://houra.app"
-    }
-  }
+  "keyFeatures": [
+    "AI-assisted employee scheduling with weekly views per location",
+    "Real-time attendance tracking with QR-code clock-in",
+    "Employee self-service portal (PWA, installable on mobile)",
+    "Payroll processing with advances, leave management, and audit trail",
+    "Houra Campus – courses, internal wiki, and automatic digital certificates",
+    "Houra Empleo – branded public job portal with candidate pipeline",
+    "Internal chat, social feed, and company announcements",
+    "Organizational chart and centralized employee profiles",
+    "Recruitment pipeline with customizable application forms and interview scheduling",
+    "HR analytics and exportable reports"
+  ],
+  "publicApiSurface": [
+    "Sign up / Sign in (houra.app/sign-up, houra.app/sign-in)",
+    "Admin Panel – Schedules, Attendance, Employees, Payroll, Recruitment, Communication",
+    "Employee Portal – Clock-in/out, Schedule view, Leave & advance requests, Documents",
+    "Houra Campus – Course catalog, Wiki, Certificate issuance, Progress reports",
+    "Houra Empleo – Public job portal, Application forms, Candidate pipeline",
+    "Pricing plans: Starter ($45,000/mo), Growing ($70,000/mo), Scale ($198,000/mo), Empresarial (custom)"
+  ]
 }

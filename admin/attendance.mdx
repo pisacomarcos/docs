@@ -1,0 +1,96 @@
+---
+title: "Real-Time Attendance Tracking and QR Clock-In"
+sidebarTitle: "Attendance"
+description: "Monitor your team's clock-ins and clock-outs live, generate monthly reports, and enable QR-based attendance at each office location."
+---
+
+The Attendance module gives you a live, continuously updated view of who is present, who is running late, and who has not yet arrived for any given day. Beyond real-time monitoring, it lets you generate detailed monthly reports per employee, detect patterns or irregularities that might indicate issues, and export clean data for payroll processing or external audits. QR-based clock-in removes the need for manual time-logging and ensures that clock events are tied to a specific physical location.
+
+## Live Attendance Panel
+
+When you open the Attendance module, the first thing you see is the live panel for today. It groups your employees into three columns:
+
+- **Present** — Employees who have clocked in and are currently working. Their clock-in time is shown alongside their name.
+- **Late** — Employees who clocked in after their scheduled start time. The delay is displayed so you can assess severity at a glance.
+- **Absent** — Employees who were scheduled for today but have not yet clocked in. As the day progresses and employees clock in, they move from Absent into Present automatically.
+
+The panel refreshes in real time, so you never need to reload the page to see the latest status.
+
+<Tip>
+  Pin the Attendance module in a browser tab you keep open throughout the day. You'll catch lateness and absences the moment they happen instead of discovering them after the fact.
+</Tip>
+
+## How QR Clock-In Works
+
+QR clock-in ties attendance events to a physical location. Instead of employees entering times manually or using a shared PIN, each location in your organization has its own unique QR code. Employees scan it with the Houra Employee Portal app when they arrive and when they leave.
+
+### Setting Up QR Codes per Location
+
+<Steps>
+  <Step title="Go to Locations in the Employees module">
+    Navigate to **Employees → Locations**. You'll see a list of all the offices and sites you have configured.
+  </Step>
+  <Step title="Open a location and find the QR code">
+    Click on a location to open its detail panel. Scroll down to the **QR Clock-In** section.
+  </Step>
+  <Step title="Download or print the QR code">
+    Click **Download QR** to save the image, or click **Print** to send it directly to a printer. Post the printed QR code at the entrance of that location.
+  </Step>
+  <Step title="Repeat for each location">
+    Every location has its own unique code. Repeat this process for each office or site where you want to enable QR clock-in.
+  </Step>
+</Steps>
+
+When an employee scans the QR code with their Employee Portal app, Houra records the clock event, timestamps it, and links it to that specific location. The live panel updates within seconds.
+
+<Note>
+  Employees must have the Houra Employee Portal app installed and be logged in to their account for QR clock-in to work. The QR code alone does not clock anyone in — the app validates the employee's identity.
+</Note>
+
+<Warning>
+  Each location's QR code is unique and should not be shared between sites. Using the same code at multiple locations makes it impossible to accurately track which site an employee clocked in from.
+</Warning>
+
+## Generating Monthly Reports
+
+At the end of each month — or at any point during the month — you can generate a detailed attendance report for any employee.
+
+<Steps>
+  <Step title="Open the Reports tab">
+    In the Attendance module, click the **Reports** tab at the top of the page.
+  </Step>
+  <Step title="Select the employee and period">
+    Use the employee search field to find the person you want to report on. Then choose the month and year from the date selector.
+  </Step>
+  <Step title="Review the report">
+    The report shows each working day, the scheduled start and end time, the actual clock-in and clock-out time, and whether the employee was on time, late, or absent.
+  </Step>
+  <Step title="Export if needed">
+    Click **Export** to download the report as a CSV or PDF file. See the section below for more on exporting.
+  </Step>
+</Steps>
+
+## Detecting Irregularities
+
+Houra flags attendance events that fall outside expected parameters so you can investigate without manually scanning every row.
+
+Irregularities that Houra detects include:
+
+- **Repeated lateness** — An employee who is late more than a configurable number of times in a rolling period.
+- **Missing clock-outs** — An employee who clocked in but never clocked out, which may indicate a forgotten check-out or a system issue.
+- **Unusually short shifts** — A clock-in and clock-out that are much closer together than the scheduled shift duration.
+- **Location mismatches** — An employee who was scheduled at one location but clocked in from a different one.
+
+Flagged events are highlighted in amber in both the live panel and the monthly report view. Click any flagged event to see the details and add an internal note if you investigate and resolve it.
+
+## Exporting Attendance Data
+
+You can export attendance data at any time for payroll processing, compliance records, or external HR tools.
+
+- **Per-employee CSV** — Export a single employee's attendance log for any date range.
+- **Full-team CSV** — Export attendance records for your entire team for a selected month, with one row per clock event.
+- **PDF report** — Generate a formatted, printable report suitable for official records or employee reviews.
+
+<Note>
+  Attendance data exported from Houra is automatically formatted to align with the payroll module's import expectations, making it straightforward to reconcile hours worked with salary calculations.
+</Note>

@@ -1,0 +1,5 @@
+# Source: https://houra.app/careers/0EQoqK8AobusDudhWjwV2U7KYYuKF8Eu
+
+## Puestos disponibles (4)
+
+[**Barista**\\ \\ Ver oferta\\ \\ LOCAL DEMO\\ \\ Full time\\ \\ Presencial](https://houra.app/careers/0EQoqK8AobusDudhWjwV2U7KYYuKF8Eu/4285cd9e-ddfc-498a-9230-72cfbbf318ac) [**Atención al Publico**\\ \\ Ver oferta\\ \\ LOCAL DEMO\\ \\ Full time\\ \\ Presencial](https://houra.app/careers/0EQoqK8AobusDudhWjwV2U7KYYuKF8Eu/06dfaf34-49db-41cc-921a-3a0a5131188f) [**Hola**\\ \\ Ver oferta\\ \\ Sucursal Norte\\ \\ Full time\\ \\ Presencial](https://houra.app/careers/0EQoqK8AobusDudhWjwV2U7KYYuKF8Eu/61fc6986-e537-4ef6-8080-e3740f178359) [**Servicio al cliente**\\ \\ Ver oferta\\ \\ Sucursal Norte\\ \\ Full time\\ \\ Presencial](https://houra.app/careers/0EQoqK8AobusDudhWjwV2U7KYYuKF8Eu/9da7648d-ff12-4196-840b-ff5ac7f46c63)

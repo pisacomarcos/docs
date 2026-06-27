@@ -17,7 +17,8 @@
       "type": "button",
       "label": "Comenzar gratis",
       "href": "https://houra.app/sign-up"
-    }
+    },
+    "links": []
   },
   "navigation": {
     "tabs": [

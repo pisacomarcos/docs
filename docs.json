@@ -100,23 +100,49 @@
             "groups": [
               {
                 "group": "Comenzar",
-                "pages": []
+                "pages": [
+                  "es/introduction.mdx",
+                  "es/quickstart.mdx",
+                  "es/pricing.mdx"
+                ]
               },
               {
                 "group": "Panel de Administración",
-                "pages": []
+                "pages": [
+                  "es/admin/overview.mdx",
+                  "es/admin/schedules.mdx",
+                  "es/admin/attendance.mdx",
+                  "es/admin/employees.mdx",
+                  "es/admin/payroll.mdx",
+                  "es/admin/communication.mdx"
+                ]
               },
               {
                 "group": "Portal del Empleado",
-                "pages": []
+                "pages": [
+                  "es/employee/overview.mdx",
+                  "es/employee/clock-in.mdx",
+                  "es/employee/schedules.mdx",
+                  "es/employee/requests.mdx"
+                ]
               },
               {
                 "group": "Campus",
-                "pages": []
+                "pages": [
+                  "es/campus/overview.mdx",
+                  "es/campus/courses.mdx",
+                  "es/campus/wiki.mdx",
+                  "es/campus/certificates.mdx"
+                ]
               },
               {
                 "group": "Reclutamiento",
-                "pages": []
+                "pages": [
+                  "es/careers/overview.mdx",
+                  "es/careers/job-listings.mdx",
+                  "es/careers/applications.mdx",
+                  "es/careers/pipeline.mdx"
+                ]
               }
             ]
           },
@@ -125,7 +151,11 @@
             "groups": [
               {
                 "group": "Soporte",
-                "pages": []
+                "pages": [
+                  "es/help/faq.mdx",
+                  "es/help/troubleshooting.mdx",
+                  "es/help/contact.mdx"
+                ]
               }
             ]
           }

@@ -97,5 +97,11 @@
   },
   "interaction": {
     "drilldown": true
+  },
+  "icons": {
+    "library": "fontawesome"
+  },
+  "background": {
+    "decoration": "grid"
   }
 }
